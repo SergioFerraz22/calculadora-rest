@@ -13,6 +13,16 @@ A API oferece os seguintes endpoints para realizar operações matemáticas e c�
 - `/juros-simples`: Calcula juros simples com base em um principal, taxa e tempo.
 - `/juros-compostos`: Calcula juros compostos com base em um principal, taxa e tempo.
 
+## Tecnologias Utilizadas
+
+- Java
+- Spring Boot
+- Spring Web
+- Springdoc OpenAPI
+- Log4j
+- Lombok
+- Maven
+
 ## Padrões de Projeto Aplicados
 
 Esta API foi desenvolvida seguindo alguns padrões de projeto, incluindo os princípios do SOLID, para garantir um código organizado, flexível e de fácil manutenção:
@@ -21,15 +31,30 @@ Esta API foi desenvolvida seguindo alguns padrões de projeto, incluindo os prin
 - **Separação de Responsabilidades (Separation of Concerns)**: As classes foram organizadas de forma a separar as diferentes responsabilidades, seguindo o princípio da Responsabilidade Única do SOLID. Isso promove um código mais modular e coeso.
 - **Documentação com OpenAPI**: A API foi documentada usando o padrão OpenAPI para facilitar o entendimento dos endpoints e dos parâmetros esperados.
 
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+- `src/main/java`: Contém o código-fonte do projeto Java.
+  - `br.com.calculadora.rest.api.controller`: Pacote que contém os controladores REST da aplicação.
+  - `br.com.calculadora.rest.config`: Pacote com as configurações do Spring Boot e do OpenAPI.
+  - `br.com.calculadora.rest.model`: Pacote com as classes de modelo e serviços da calculadora.
+- `src/main/resources`: Contém os recursos do projeto, como arquivos de propriedades e configurações.
+- `pom.xml`: Arquivo de configuração do Maven, responsável pela definição das dependências e plugins do projeto.
+
 ## Como Executar
 
-Para executar a API localmente, siga estas etapas:
+Para executar o projeto localmente, siga estas etapas:
 
-1. Clone este repositório.
-2. Certifique-se de ter o Java e o Maven instalados em sua máquina.
-3. Navegue até o diretório raiz do projeto.
-4. Execute o comando `mvn spring-boot:run`.
-5. Acesse os endpoints da API usando um cliente REST, como Postman ou curl.
+1. Clone o repositório para sua máquina local.
+2. Abra o projeto em sua IDE Java preferida.
+3. Certifique-se de ter o Maven instalado e configurado em seu ambiente.
+4. Execute o comando `mvn spring-boot:run` na raiz do projeto.
+5. Acesse a API em `http://localhost:8080`.
+
+## Documentação da API
+
+A documentação da API está disponível em `http://localhost:8080/swagger-ui.html`, onde você pode visualizar e testar os endpoints disponíveis.
 
 ## Contribuição
 
